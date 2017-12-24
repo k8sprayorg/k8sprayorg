@@ -1,5 +1,7 @@
+stages:
+  - push
 Push upstream:
-  images: governmentpaas/git-ssh:latest
+  image: governmentpaas/git-ssh:latest
   stage: push
   script:
     - git log
